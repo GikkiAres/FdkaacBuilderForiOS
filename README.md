@@ -27,12 +27,18 @@ FdkaacBuilderForiOS
 ## 编译结果
 
 该脚本会分别在
+
+```
 libPath/../Build/Thin/x86_64
 libPath/../Build/Thin/i386
 libPath/../Build/Thin/armv7s
 libPath/../Build/Thin/arm64
+```
+
 四个目录中,编译对应平台下的库文件
+
 然后将四个平台下的库合并到
+
 libPath/../Build/Fat中
 
 实际使用时,我们只要把fat中的.a库文件和头文件一起拷贝到项目中去就可以了.
